@@ -3,10 +3,14 @@ body {
   background: radial-gradient(circle, rgba(31,75,103,1) 50%, rgba(23,33,41,1) 100%);
 }
 
+.container {
+  margin: 0 auto;
+}
+
 h1 {
   color: #fafafa;
   text-align: center;
-  margin: 10%  0 30%;
+  margin: 10% 0 15%;
 }
 
 ul {
