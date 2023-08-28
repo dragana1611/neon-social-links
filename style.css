@@ -1,6 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+
 body {
-  background: rgb(31,75,103);
-  background: radial-gradient(circle, rgba(31,75,103,1) 50%, rgba(23,33,41,1) 100%);
+  min-height: 100vh;
+  background: rgb(31, 75, 103);
+  background: radial-gradient(
+    circle,
+    rgba(31, 75, 103, 1) 50%,
+    rgba(23, 33, 41, 1) 100%
+  );
 }
 
 .container {
@@ -12,14 +19,17 @@ body {
 }
 
 h1 {
+  font-family: "Montserrat", sans-serif;
   color: #fafafa;
   text-align: center;
-  margin: 10% 0;
+  margin: 10% 0 30%;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #a8b8ff,
+    0 0 90px #a8b8ff;
 }
 
 ul {
   position: relative;
-  display: flex;  
+  display: flex;
 }
 
 ul li {
@@ -46,18 +56,25 @@ ul li::before {
   font-size: 6em;
   height: 0;
   overflow: hidden;
-  transition: 0.5s ease-in-out 
+  transition: 0.5s ease-in-out;
 }
 
- ul li:nth-child(1)::before {
-  content: '\f16d';
-  background-image: linear-gradient(45deg, #f09433 0%,#e6683c 25%, #dc2743 50%,#cc2366 75%, #bc1888 100%);
+ul li:nth-child(1)::before {
+  content: "\f16d";
+  background-image: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-bottom: 4px solid #dc2743;
 }
 
- ul li:nth-child(2)::before {
+ul li:nth-child(2)::before {
   content: "\f232";
   background: #56dc6e;
   background: linear-gradient(345deg, #56dc6e 40%, #9cfcad 100%);
@@ -66,12 +83,12 @@ ul li::before {
   border-bottom: 4px solid #56dc6e;
 }
 
- ul li:nth-child(3)::before {
+ul li:nth-child(3)::before {
   content: "\f099";
   color: #1da1f2;
   border-bottom: 4px solid #1da1f2;
 }
 
- ul li:hover::before {
+ul li:hover::before {
   height: 100%;
 }
